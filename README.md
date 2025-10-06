@@ -1,75 +1,39 @@
-# DevPage - Minha Jornada no CódigoThis is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DevPage - Minha Jornada no Código
 
+Uma landing page/blog pessoal futurista desenvolvida em Next.js para compartilhar conhecimento e experiências no universo do desenvolvimento de software.
 
+## 🚀 Características
 
-Uma landing page/blog pessoal futurista desenvolvida em Next.js para compartilhar conhecimento e experiências no universo do desenvolvimento de software.## Getting Started
+- **Design Futurista**: Tema escuro com cores neon (azul elétrico, verde neon, roxo profundo)
+- **Fundo Interativo**: Partículas animadas criadas com Canvas API
+- **Responsivo**: Layout totalmente adaptável para desktop, tablet e mobile
+- **Performance**: Otimizado para carregamento rápido
+- **SEO**: Meta tags otimizadas para mecanismos de busca
 
+## 🛠️ Tecnologias Utilizadas
 
-
-## 🚀 CaracterísticasFirst, run the development server:
-
-
-
-- **Design Futurista**: Tema escuro com cores neon (azul elétrico, verde neon, roxo profundo)```bash
-
-- **Fundo Interativo**: Partículas animadas criadas com Canvas APInpm run dev
-
-- **Responsivo**: Layout totalmente adaptável para desktop, tablet e mobile# or
-
-- **Performance**: Otimizado para carregamento rápidoyarn dev
-
-- **SEO**: Meta tags otimizadas para mecanismos de busca# or
-
-pnpm dev
-
-## 🛠️ Tecnologias Utilizadas# or
-
-bun dev
-
-- **Framework**: Next.js 15 com TypeScript```
-
+- **Framework**: Next.js 15 com TypeScript
 - **Estilização**: Tailwind CSS v4 com tema personalizado
-
-- **Animações**: Framer MotionOpen [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
+- **Animações**: Framer Motion
 - **Markdown**: next-mdx-remote para renderização de artigos
-
-- **Ícones**: Lucide ReactYou can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
+- **Ícones**: Lucide React
 - **Deploy**: Vercel
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## 🎨 Funcionalidades
 
-## Learn More
-
 ### ✅ Implementado
 
-To learn more about Next.js, take a look at the following resources:
-
 - [x] **Navbar Fixa**: Navegação com links para Home, Artigos, Sobre Mim
-
-- [x] **Hero Section**: Título gradiente, animações futuristas, terminal animado- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-
-- [x] **Grid de Artigos**: Cards com efeitos hover neon e tags coloridas- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
+- [x] **Hero Section**: Título gradiente, animações futuristas, terminal animado
+- [x] **Grid de Artigos**: Cards com efeitos hover neon e tags coloridas
 - [x] **Páginas Dinâmicas**: Roteamento para artigos individuais (`/artigos/[slug]`)
-
-- [x] **Sistema de Markdown**: Renderização de conteúdo com next-mdx-remoteYou can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
+- [x] **Sistema de Markdown**: Renderização de conteúdo com next-mdx-remote
 - [x] **Seção Sobre Mim**: Biografia, skills e links sociais
-
-- [x] **Fundo de Partículas**: Animação canvas personalizada## Deploy on Vercel
-
+- [x] **Fundo de Partículas**: Animação canvas personalizada
 - [x] **Design Responsivo**: Compatível com todos os dispositivos
+- [x] **Otimização Vercel**: Configuração para deploy
 
-- [x] **Otimização Vercel**: Configuração para deployThe easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-
-
-## 📁 Estrutura do ProjetoCheck out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
+## 📁 Estrutura do Projeto
 
 ```
 src/
@@ -175,6 +139,13 @@ Edite as variáveis CSS em `src/app/globals.css`:
 ### Componentes
 Todos os componentes estão em `src/components/` e são facilmente customizáveis.
 
+## 🎯 Próximos Passos para Personalização
+
+1. **Adicionar sua foto**: Coloque sua foto como `profile.jpg` na pasta `public/`
+2. **Editar biografia**: Personalize o texto na seção "Sobre Mim" em `src/components/AboutSection.tsx`
+3. **Criar artigos**: Edite `src/data/articles.ts` para adicionar seus próprios artigos
+4. **Atualizar links sociais**: Configure seus links do GitHub, LinkedIn e email nos componentes
+
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
@@ -182,13 +153,6 @@ Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes
 ## 🤝 Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou pull request.
-
-## 🎯 Próximos Passos para Personalização
-
-1. **Adicionar sua foto**: Coloque sua foto como `profile.jpg` na pasta `public/`
-2. **Editar biografia**: Personalize o texto na seção "Sobre Mim" em `src/components/AboutSection.tsx`
-3. **Criar artigos**: Edite `src/data/articles.ts` para adicionar seus próprios artigos
-4. **Atualizar links sociais**: Configure seus links do GitHub, LinkedIn e email nos componentes
 
 ---
 
