@@ -65,6 +65,10 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
         .prose a {
           @apply text-neon-blue hover:text-neon-green transition-colors;
         }
+        .prose img {
+          @apply rounded-lg border border-gray-700 mx-auto my-8 max-w-full h-auto;
+          box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
+        }
       `}</style>
     </div>
   );

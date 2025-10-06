@@ -36,6 +36,8 @@ O grande problema é: você **NUNCA** pode misturar as coisas! Um cliente que co
 
 Além disso, no ano que vem, você quer lançar o **LEGO Senhor dos Anéis**. Você precisa de uma forma de adicionar esse novo tema sem ter que redesenhar toda a sua linha de produção.
 
+![Diagrama do Padrão Abstract Factory](/abstract.png)
+
 ## A Solução: O "Abstract Factory" (A Fábrica de Fábricas)
 
 Para resolver isso, você cria um sistema genial.
