@@ -123,7 +123,7 @@ Você não precisa saber os detalhes de como ele faz isso. Você só precisa con
         date: '07 Out 2025',
         readTime: '12 min',
         tags: ['AWS', 'Cloud Computing', 'Fundamentos'],
-        image: '/aws1.jpg',
+        image: '/aws1.jpeg',
         content: `
 ## Módulo 1: Fundamentos Essenciais da Nuvem AWS
 
