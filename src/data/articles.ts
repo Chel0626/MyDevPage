@@ -154,6 +154,8 @@ Você não constrói uma usina hidrelétrica no seu quintal para ter luz. Você 
 
 A AWS é a "companhia de energia" para a sua empresa de software. Você "pluga" sua aplicação (o **software**) na infraestrutura deles e paga apenas pelos recursos que seu software utiliza.
 
+![Infraestrutura de Computação em Nuvem AWS](/aws1.jpeg)
+
 **4. Mãos na Massa (Aplicação Real)**
 
 Vamos criar um quadro de planejamento para o lançamento do software, comparando o modelo tradicional com o modelo em nuvem. Isso é uma ferramenta útil para justificar a escolha da nuvem para um cliente ou gerente.
