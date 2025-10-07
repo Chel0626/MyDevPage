@@ -130,7 +130,7 @@ export default function AboutSection() {
                   <li className="flex items-start">
                     <span className="text-neon-blue mr-2">•</span>
                     <div>
-                      <strong className="text-white">Arquitetura de Software:</strong> A base de tudo. O "porquê" e o "como" por trás do código, utilizando Design Patterns e princípios como SOLID para criar sistemas que são robustos, manuteníveis e flexíveis.
+                      <strong className="text-white">Arquitetura de Software:</strong> A base de tudo. O &ldquo;porquê&rdquo; e o &ldquo;como&rdquo; por trás do código, utilizando Design Patterns e princípios como SOLID para criar sistemas que são robustos, manuteníveis e flexíveis.
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -148,7 +148,7 @@ export default function AboutSection() {
                 </ul>
 
                 <p>
-                  Movido pela curiosidade e por uma proatividade natural, minha paixão é mergulhar em desafios e projetar soluções de ponta a ponta. Minha abordagem é a de um profissional que busca ser <strong className="text-neon-green">"pró-eficiente"</strong>: alguém com uma visão holística, que domina as metodologias e entende que o sucesso de um projeto vai muito além das linhas de código.
+                  Movido pela curiosidade e por uma proatividade natural, minha paixão é mergulhar em desafios e projetar soluções de ponta a ponta. Minha abordagem é a de um profissional que busca ser <strong className="text-neon-green">&ldquo;pró-eficiente&rdquo;</strong>: alguém com uma visão holística, que domina as metodologias e entende que o sucesso de um projeto vai muito além das linhas de código.
                 </p>
 
                 <p>
