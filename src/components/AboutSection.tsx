@@ -116,17 +116,45 @@ export default function AboutSection() {
             className="space-y-6"
           >
             <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-6">
-              <h4 className="text-xl font-bold text-white mb-4">Minha Jornada</h4>
-              <p className="text-gray-300 leading-relaxed mb-4">
-                Cloud-Native Software Engineer apaixonado por tecnologia e inovação. 
-                Sempre em busca de novos conhecimentos e desafios no universo 
-                da programação e desenvolvimento web.
-              </p>
-              <p className="text-gray-300 leading-relaxed">
-                Adoro compartilhar conhecimento e experiências através de 
-                artigos e projetos, contribuindo para a comunidade de 
-                desenvolvedores.
-              </p>
+              <h4 className="text-xl font-bold text-white mb-4">Sobre Mim: Um Engenheiro de Software Cloud-Native em Formação</h4>
+              <div className="text-gray-300 leading-relaxed space-y-4">
+                <p>
+                  Olá! Sou estudante de Engenharia de Software com uma convicção que guia minha jornada: <strong className="text-neon-blue">o código não é o ponto de partida, mas a consequência de uma arquitetura bem pensada e de um problema bem compreendido.</strong>
+                </p>
+                
+                <p>
+                  Desde o início dos meus estudos, percebi que o mercado de tecnologia está evoluindo para além do desenvolvedor focado apenas na sintaxe. Para criar soluções verdadeiramente eficientes e inovadoras, é preciso ser um arquiteto, não apenas um construtor. Essa percepção me levou a buscar um aprendizado profundo no tripé que acredito ser o presente e o futuro do desenvolvimento moderno:
+                </p>
+
+                <ul className="space-y-2 ml-4">
+                  <li className="flex items-start">
+                    <span className="text-neon-blue mr-2">•</span>
+                    <div>
+                      <strong className="text-white">Arquitetura de Software:</strong> A base de tudo. O "porquê" e o "como" por trás do código, utilizando Design Patterns e princípios como SOLID para criar sistemas que são robustos, manuteníveis e flexíveis.
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-neon-blue mr-2">•</span>
+                    <div>
+                      <strong className="text-white">Cloud Computing:</strong> O ecossistema que dá vida, escala e resiliência às aplicações. Entendo a nuvem não como um simples servidor, mas como uma plataforma estratégica para a entrega de valor.
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-neon-blue mr-2">•</span>
+                    <div>
+                      <strong className="text-white">Inteligência Artificial & Machine Learning:</strong> A força multiplicadora. Vejo a IA como um parceiro de desenvolvimento, uma ferramenta para automatizar o trivial e nos liberar para focar no que é verdadeiramente complexo e criativo.
+                    </div>
+                  </li>
+                </ul>
+
+                <p>
+                  Movido pela curiosidade e por uma proatividade natural, minha paixão é mergulhar em desafios e projetar soluções de ponta a ponta. Minha abordagem é a de um profissional que busca ser <strong className="text-neon-green">"pró-eficiente"</strong>: alguém com uma visão holística, que domina as metodologias e entende que o sucesso de um projeto vai muito além das linhas de código.
+                </p>
+
+                <p>
+                  Este blog é o diário de bordo da minha jornada para me tornar esse profissional. Um espaço para explorar, documentar e compartilhar meus aprendizados. Se você também acredita que o futuro pertence aos arquitetos de soluções, conecte-se e vamos aprender juntos.
+                </p>
+              </div>
             </div>
 
             <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-6">
