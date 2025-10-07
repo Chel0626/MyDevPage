@@ -63,7 +63,7 @@ export default function AboutSection() {
             </div>
 
             <h3 className="text-2xl font-bold text-white mb-4">Michel Henrique</h3>
-            <p className="text-neon-blue font-semibold mb-6">Full Stack Developer</p>
+            <p className="text-neon-blue font-semibold mb-6">Cloud-Native Software Engineer</p>
 
             <div className="flex justify-center lg:justify-start space-x-4 mb-8">
               <a 
@@ -118,7 +118,7 @@ export default function AboutSection() {
             <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-6">
               <h4 className="text-xl font-bold text-white mb-4">Minha Jornada</h4>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Desenvolvedor Full Stack apaixonado por tecnologia e inovação. 
+                Cloud-Native Software Engineer apaixonado por tecnologia e inovação. 
                 Sempre em busca de novos conhecimentos e desafios no universo 
                 da programação e desenvolvimento web.
               </p>
