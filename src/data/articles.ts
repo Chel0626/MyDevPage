@@ -9,15 +9,33 @@ export interface Article {
   content: string;
 }
 
-export const articles: Article[] = [
+export interface Theme {
+  id: string;
+  name: string;
+  description: string;
+  icon: string;
+  color: string;
+  bgColor: string;
+  articles: Article[];
+}
+
+export const themes: Theme[] = [
   {
-    slug: 'abstract-factory-pattern',
-    title: 'Abstract Factory - O Padrão da Fábrica de Fábricas',
-    description: 'Entenda o padrão Abstract Factory através de uma analogia simples com uma montadora de brinquedos LEGO. Aprenda como criar famílias de objetos relacionados sem misturar temas.',
-    date: '06 Out 2025',
-    readTime: '8 min',
-    tags: ['Design Patterns', 'Programação', 'Arquitetura'],
-    content: `
+    id: 'design-patterns',
+    name: 'Design Patterns',
+    description: 'Padrões de projeto fundamentais para desenvolvimento de software',
+    icon: '🏗️',
+    color: 'text-purple-400',
+    bgColor: 'bg-purple-500/20',
+    articles: [
+      {
+        slug: 'abstract-factory-pattern',
+        title: 'Abstract Factory - O Padrão da Fábrica de Fábricas',
+        description: 'Entenda o padrão Abstract Factory através de uma analogia simples com uma montadora de brinquedos LEGO. Aprenda como criar famílias de objetos relacionados sem misturar temas.',
+        date: '06 Out 2025',
+        readTime: '8 min',
+        tags: ['Design Patterns', 'Programação', 'Arquitetura'],
+        content: `
 # Abstract Factory
 
 Imagine que você é o dono de uma montadora de brinquedos, como a LEGO.
@@ -86,9 +104,25 @@ Você não precisa saber os detalhes de como ele faz isso. Você só precisa con
 - **Cliente (Você):** Você escolhe qual **Gerente de Tema** quer usar e pede os produtos a ele, sem se preocupar com os detalhes. O resultado é sempre um conjunto de peças que combinam.
 
 **Principal Vantagem:** Se amanhã você quiser criar o tema **LEGO Senhor dos Anéis**, você não precisa mudar nada no seu sistema. Você só precisa contratar um novo "Gerente do Tema Senhor dos Anéis" que siga as mesmas regras do "Chefe de Design" e saiba criar o Frodo, a Sociedade do Anel e o Um Anel.
-    `
+        `
+      }
+    ]
+  },
+  {
+    id: 'aws',
+    name: 'AWS',
+    description: 'Guias e tutoriais sobre Amazon Web Services e cloud computing',
+    icon: '☁️',
+    color: 'text-orange-400',
+    bgColor: 'bg-orange-500/20',
+    articles: [
+      // Aqui vão os futuros artigos de AWS
+    ]
   }
 ];
+
+// Manter compatibilidade com a estrutura antiga
+export const articles: Article[] = themes.flatMap(theme => theme.articles);
 
 export function getArticleBySlug(slug: string): Article | undefined {
   return articles.find(article => article.slug === slug);
@@ -96,4 +130,17 @@ export function getArticleBySlug(slug: string): Article | undefined {
 
 export function getAllArticles(): Article[] {
   return articles;
+}
+
+export function getAllThemes(): Theme[] {
+  return themes;
+}
+
+export function getThemeById(id: string): Theme | undefined {
+  return themes.find(theme => theme.id === id);
+}
+
+export function getArticlesByTheme(themeId: string): Article[] {
+  const theme = getThemeById(themeId);
+  return theme ? theme.articles : [];
 }
