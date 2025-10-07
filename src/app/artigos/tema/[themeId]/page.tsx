@@ -19,8 +19,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ThemePage({ params }: ThemePageProps) {
-  const theme = getThemeById(params.themeId);
+export default async function ThemePage({ params }: ThemePageProps) {
+  const { themeId } = await params;
+  const theme = getThemeById(themeId);
 
   if (!theme) {
     notFound();
