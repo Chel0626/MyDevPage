@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-xl font-bold gradient-text mb-4">DevPage</h3>
+            <h3 className="text-xl font-bold gradient-text mb-4">My_DevPage</h3>
             <p className="text-gray-400 mb-4 max-w-md">
               Um espaço dedicado ao compartilhamento de conhecimento e experiências 
               no universo do desenvolvimento de software.

@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DevPage - Minha Jornada no Código",
+  title: "My_DevPage - Minha Jornada no Código",
   description: "Blog pessoal de Michel Henrique, desenvolvedor apaixonado por tecnologia. Compartilhando conhecimento sobre Next.js, React, Python, AWS e muito mais.",
   keywords: ["desenvolvimento web", "programação", "javascript", "typescript", "react", "nextjs", "python", "aws"],
   authors: [{ name: "Michel Henrique" }],
   openGraph: {
-    title: "DevPage - Minha Jornada no Código",
+    title: "My_DevPage - Minha Jornada no Código",
     description: "Blog pessoal de Michel Henrique, desenvolvedor apaixonado por tecnologia",
     type: "website",
     locale: "pt_BR",
