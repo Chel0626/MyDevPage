@@ -34,7 +34,7 @@ export const categories: Category[] = [
     slug: 'arquitetura-software',
     title: 'Arquitetura de Software',
     description: 'Conceitos fundamentais sobre engenharia de software, requisitos e boas práticas de desenvolvimento.',
-    icon: '🏗️'
+    icon: '⚙️'
   }
 ];
 
