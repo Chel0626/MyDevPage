@@ -372,6 +372,67 @@ Por fim, um algoritmo precisa se comunicar com o mundo exterior.
 
 Dominar esses conceitos básicos é o primeiro passo para se tornar um programador. Algoritmos são a base de tudo na programação, e entender como estruturar o pensamento lógico fará toda a diferença na sua jornada de desenvolvimento de software.
         `
+      },
+      {
+        slug: 'estrutura-condicional',
+        title: 'Estrutura Condicional',
+        description: 'Aprenda como criar decisões em seus algoritmos usando estruturas condicionais. Entenda o funcionamento de if/else, estruturas aninhadas e switch case.',
+        date: '09 Out 2025',
+        readTime: '12 min',
+        tags: ['Algoritmos', 'Lógica', 'Condicionais'],
+        content: `
+# Estrutura Condicional - As Encruzilhadas do Código
+
+Imagine que você está dirigindo e chega a uma encruzilhada. Você precisa tomar uma decisão: seguir reto ou virar à direita? A sua escolha depende de uma condição, como "o semáforo está verde?". Na programação, os algoritmos também chegam a encruzilhadas, e a estrutura condicional é a ferramenta que usamos para que eles possam tomar decisões e escolher qual caminho seguir.
+
+Até agora, nossos algoritmos eram como uma estrada reta: todas as instruções eram executadas em sequência, sem desvios. As estruturas condicionais nos permitem criar esses desvios.
+
+## 1. O Coração da Decisão: A Condição
+
+Toda decisão se baseia em uma condição, que é uma pergunta cuja resposta só pode ser verdadeira ou falsa. Para formular essas perguntas, usamos:
+
+**Operadores Relacionais:** Para comparar valores (&gt;, &lt;, =).
+
+**Operadores Lógicos:** Para combinar múltiplas perguntas ("E", "OU").
+
+## 2. Estrutura Condicional Simples (Se): A Rua de Mão Única
+
+Pense nesta estrutura como um caminho com um desvio opcional. Se uma condição for verdadeira, você entra nesse desvio e executa uma ação. Se for falsa, você simplesmente ignora o desvio e continua reto.
+
+**Analogia:** "Se (estiver chovendo), então leve o guarda-chuva."
+
+**Funcionamento:** O algoritmo testa uma condição. Se o resultado for verdadeiro, ele executa um bloco de código específico. Se for falso, ele pula esse bloco e segue em frente.
+
+## 3. Estrutura Condicional Composta (Se / Senão): A Bifurcação na Estrada
+
+Aqui, temos uma bifurcação clara com dois caminhos possíveis. Não há como seguir reto; você obrigatoriamente escolherá um dos dois lados.
+
+**Analogia:** "Se (a senha do caixa eletrônico estiver correta), então você pode sacar o dinheiro. Senão, (a senha está incorreta) uma mensagem de erro aparece."
+
+**Funcionamento:** O algoritmo testa uma condição. Se for verdadeira, ele executa o primeiro bloco de código. Se for falsa, ele executa o segundo bloco de código. Só um dos dois caminhos será seguido.
+
+## 4. Estrutura Condicional Aninhada: O Labirinto de Decisões
+
+E se, após escolher um caminho na bifurcação, você encontrasse outra bifurcação? Isso é uma estrutura aninhada: uma decisão dentro de outra.
+
+**Analogia:** Para encontrar o maior de três números (A, B e C), primeiro você pergunta: "A é maior que B?". Se a resposta for sim, você entra nesse caminho e faz uma nova pergunta: "A é maior que C?". A resposta a essa segunda pergunta definirá o maior número.
+
+**Funcionamento:** É um Se dentro de outro Se (ou Senão), permitindo criar uma lógica mais complexa e filtrar possibilidades em múltiplos níveis. Usar essa estrutura pode tornar o algoritmo mais rápido, pois ele realiza menos testes.
+
+## 5. Estrutura de Decisão Múltipla (Caso): O Menu de um Restaurante
+
+Imagine um menu com várias opções numeradas (1-Pizza, 2-Massa, 3-Salada). Você escolhe um número, e o sistema executa a ação correspondente àquela opção.
+
+**Analogia:** Um menu onde você digita um número de 1 a 12 e o algoritmo escreve o mês correspondente.
+
+**Funcionamento:** Em vez de usar vários Se aninhados, a estrutura Caso avalia uma variável e, dependendo do seu valor, "salta" diretamente para o bloco de código correspondente, tornando o algoritmo mais claro e eficiente.
+
+---
+
+## Conclusão
+
+As estruturas condicionais são fundamentais para criar algoritmos inteligentes que tomam decisões. Dominá-las é essencial para qualquer programador, pois elas aparecem em praticamente todos os programas que você desenvolverá.
+        `
       }
     ]
   }

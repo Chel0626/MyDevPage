@@ -76,6 +76,7 @@ function ArticleCard({ article, index }: ArticleCardProps) {
     'Fundamentos': 'bg-green-500/20 text-green-400 border-green-400',
     'Algoritmos': 'bg-purple-500/20 text-purple-400 border-purple-400',
     'Lógica': 'bg-pink-500/20 text-pink-400 border-pink-400',
+    'Condicionais': 'bg-indigo-500/20 text-indigo-400 border-indigo-400',
     'Next.js': 'bg-neon-blue/20 text-neon-blue border-neon-blue',
     'React': 'bg-blue-500/20 text-blue-400 border-blue-400',
     'TypeScript': 'bg-neon-purple/20 text-neon-purple border-neon-purple',
