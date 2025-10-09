@@ -213,7 +213,7 @@ Na prática, o fluxo é contínuo:
 2. Imediatamente, você a classifica usando **MoSCoW** (Ex: O cliente diz que é importante, mas não vital para o primeiro dia, então é um **Should Have**).
 3. A história entra na sua lista de tarefas (**backlog**) já priorizada.
 
-Ao final da fase de requisitos, você не tem apenas uma lista de desejos, mas um **plano de ação priorizado**, pronto para ser desenhado (fase de Design) e, finalmente, codificado.
+Ao final da fase de requisitos, você não tem apenas uma lista de desejos, mas um **plano de ação priorizado**, pronto para ser desenhado (fase de Design) e, finalmente, codificado.
 
 ---
 
