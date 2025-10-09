@@ -355,7 +355,7 @@ Existem diferentes "tipos de caixas" (tipos de variáveis):
 As expressões são como as fórmulas matemáticas, combinando variáveis e constantes com operadores para realizar cálculos. Os operadores são as ferramentas que usamos:
 
 - **Aritméticos:** Para fazer contas (+, -, *, /).
-- **Relacionais:** Para fazer comparações (\>, \<, =).
+- **Relacionais:** Para fazer comparações (&gt;, &lt;, =).
 - **Lógicos:** Para combinar condições ("E", "OU", "NÃO").
 
 ## 5. Entrada e Saída de Dados: A Comunicação com o Usuário
