@@ -49,11 +49,11 @@ Neste guia, vamos desmistificar o ciclo de vida dos requisitos de uma forma simp
 
 ## A Grande Etapa: Levantamento e Análise de Requisitos
 
-Antes de pensar em código, banco de dados ou design, precisamos passar por uma fase de investigação. O objetivo é responder a uma única pergunta em diferentes níveis de detalhe: **"O que vamos construir?"**. Essa fase se divide em três passos fundamentais.
+Antes de pensar em código, banco de dados ou design, precisamos passar por uma fase de investigação. O objetivo é responder a uma única pergunta em diferentes níveis de detalhe: **&ldquo;O que vamos construir?&rdquo;**. Essa fase se divide em três passos fundamentais.
 
-### Passo 1: Requisitos de Negócio (O "Porquê")
+### Passo 1: Requisitos de Negócio (O &ldquo;Porquê&rdquo;)
 
-Tudo começa com o "porquê". Antes de qualquer funcionalidade, precisamos entender o objetivo maior, o valor que o software trará para o mundo.
+Tudo começa com o &ldquo;porquê&rdquo;. Antes de qualquer funcionalidade, precisamos entender o objetivo maior, o valor que o software trará para o mundo.
 
 **Analogia:** Pense nos futuros donos da casa. Eles não dizem ao arquiteto &ldquo;eu quero uma viga de aço de 12 polegadas&rdquo;. Eles dizem: &ldquo;Por que queremos a casa?&rdquo;.
 
@@ -69,9 +69,9 @@ No software, as perguntas-chave para descobrir os **Requisitos de Negócio** sã
 
 O resultado deste passo é a **visão clara do projeto**.
 
-### Passo 2: Requisitos de Usuário (O "O Quê" do Usuário)
+### Passo 2: Requisitos de Usuário (O &ldquo;O Quê&rdquo; do Usuário)
 
-Com o "porquê" definido, descemos um nível e focamos em quem vai usar o sistema e o que essa pessoa precisa fazer. A ferramenta mais poderosa para isso são as **Histórias de Usuário** (User Stories).
+Com o &ldquo;porquê&rdquo; definido, descemos um nível e focamos em quem vai usar o sistema e o que essa pessoa precisa fazer. A ferramenta mais poderosa para isso são as **Histórias de Usuário** (User Stories).
 
 **Analogia:** Os donos da casa agora descrevem as ações que realizarão.
 
@@ -81,14 +81,14 @@ O formato é sempre: **Como um(a) <tipo de usuário>, eu quero <fazer uma ação
 
 Este formato nos força a pensar na funcionalidade (cozinha aberta) sob a perspectiva de quem a usa (anfitrião) e a justificar sua existência (para conversar com os convidados).
 
-### Passo 3: Requisitos de Sistema (A Especificação Técnica do "O Quê")
+### Passo 3: Requisitos de Sistema (A Especificação Técnica do &ldquo;O Quê&rdquo;)
 
 Agora, traduzimos os desejos do usuário em instruções claras para os construtores (desenvolvedores). É aqui que detalhamos o comportamento do sistema. Eles se dividem em dois tipos:
 
 - **Funcionais:** O que o sistema efetivamente faz.
 - **Não Funcionais:** Como o sistema se comporta (suas qualidades).
 
-**Analogia:** O arquiteto pega a história da "cozinha aberta" e a transforma em especificações na planta.
+**Analogia:** O arquiteto pega a história da &ldquo;cozinha aberta&rdquo; e a transforma em especificações na planta.
 
 - **Requisito Funcional:** O sistema de exaustão da cozinha deve ser capaz de renovar o ar a cada 5 minutos.
 - **Requisito Não Funcional:** O nível de ruído do exaustor não deve ultrapassar 50 decibéis para não atrapalhar a conversa (performance/usabilidade).
@@ -113,7 +113,7 @@ Importante, mas não vital. O produto funciona sem, mas a experiência fica pobr
 
 ### 🤔 C - Could Have (Poderia Ter)
 
-Desejável, mas com baixo impacto se não for feito. É o "perfume". (Ex: Aquela marca importada de azeite).
+Desejável, mas com baixo impacto se não for feito. É o &ldquo;perfume&rdquo;. (Ex: Aquela marca importada de azeite).
 
 ### ❌ W - Won't Have (Não Terá... por agora)
 
@@ -123,7 +123,7 @@ Funcionalidades que ficam explicitamente para o futuro, para garantir o foco no 
 
 Na prática, o fluxo é contínuo:
 
-1. Você identifica uma **História de Usuário** (Ex: "Exportar plano alimentar para PDF").
+1. Você identifica uma **História de Usuário** (Ex: &ldquo;Exportar plano alimentar para PDF&rdquo;).
 2. Imediatamente, você a classifica usando **MoSCoW** (Ex: O cliente diz que é importante, mas não vital para o primeiro dia, então é um **Should Have**).
 3. A história entra na sua lista de tarefas (**backlog**) já priorizada.
 
@@ -133,7 +133,7 @@ Ao final da fase de requisitos, você não tem apenas uma lista de desejos, mas 
 
 ## Conclusão
 
-Entender este ciclo é o que diferencia a construção de um software bem-sucedido de um projeto destinado ao fracasso. Foque no "porquê", escute o usuário, detalhe o comportamento e, acima de tudo, **priorize o que gera mais valor**.
+Entender este ciclo é o que diferencia a construção de um software bem-sucedido de um projeto destinado ao fracasso. Foque no &ldquo;porquê&rdquo;, escute o usuário, detalhe o comportamento e, acima de tudo, **priorize o que gera mais valor**.
 
 Lembre-se: requisitos não são apenas documentos burocráticos. Eles são a ponte entre o sonho do cliente e o código que você vai escrever. Construa essa ponte com cuidado, e o sucesso do projeto será uma consequência natural.
         `
