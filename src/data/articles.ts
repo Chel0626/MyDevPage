@@ -55,11 +55,11 @@ Antes de pensar em código, banco de dados ou design, precisamos passar por uma 
 
 Tudo começa com o "porquê". Antes de qualquer funcionalidade, precisamos entender o objetivo maior, o valor que o software trará para o mundo.
 
-**Analogia:** Pense nos futuros donos da casa. Eles não dizem ao arquiteto "eu quero uma viga de aço de 12 polegadas". Eles dizem: "Por que queremos a casa?".
+**Analogia:** Pense nos futuros donos da casa. Eles não dizem ao arquiteto &ldquo;eu quero uma viga de aço de 12 polegadas&rdquo;. Eles dizem: &ldquo;Por que queremos a casa?&rdquo;.
 
-- "Precisamos de mais espaço para a nossa família que está crescendo."
-- "Queremos um lugar para receber amigos e socializar."
-- "Nosso objetivo é ter um lar seguro e economizar energia."
+- &ldquo;Precisamos de mais espaço para a nossa família que está crescendo.&rdquo;
+- &ldquo;Queremos um lugar para receber amigos e socializar.&rdquo;
+- &ldquo;Nosso objetivo é ter um lar seguro e economizar energia.&rdquo;
 
 No software, as perguntas-chave para descobrir os **Requisitos de Negócio** são:
 
@@ -75,7 +75,7 @@ Com o "porquê" definido, descemos um nível e focamos em quem vai usar o sistem
 
 **Analogia:** Os donos da casa agora descrevem as ações que realizarão.
 
-*"Como um anfitrião, eu quero uma cozinha aberta integrada à sala, para que eu possa cozinhar e conversar com meus convidados ao mesmo tempo."*
+*&ldquo;Como um anfitrião, eu quero uma cozinha aberta integrada à sala, para que eu possa cozinhar e conversar com meus convidados ao mesmo tempo.&rdquo;*
 
 O formato é sempre: **Como um(a) <tipo de usuário>, eu quero <fazer uma ação>, para que <eu possa alcançar um objetivo>**.
 
