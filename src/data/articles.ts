@@ -296,6 +296,84 @@ No próximo módulo, vamos explorar os principais serviços da AWS e como eles s
         `
       }
     ]
+  },
+  {
+    id: 'algoritmos-logica',
+    name: 'Algoritmos e Lógica de Programação',
+    description: 'Fundamentos essenciais de algoritmos, estruturas de dados e raciocínio lógico para programadores.',
+    icon: '🧮',
+    color: 'text-purple-400',
+    bgColor: 'bg-purple-500/20',
+    articles: [
+      {
+        slug: 'conceitos-basicos-algoritmos',
+        title: 'Conceitos Básicos',
+        description: 'Entenda os fundamentos de algoritmos através de analogias práticas. Aprenda o que são variáveis, expressões e como construir seus primeiros algoritmos.',
+        date: '09 Out 2025',
+        readTime: '10 min',
+        tags: ['Algoritmos', 'Lógica', 'Fundamentos'],
+        content: `
+# Conceitos Básicos de Algoritmos e Lógica de Programação
+
+Imagine que você precisa montar um móvel que acabou de comprar. Você recebe um manual com uma série de passos claros e em uma ordem específica para que, ao final, o móvel esteja montado corretamente. Esse manual é, em essência, um algoritmo.
+
+## 1. O Que é um Algoritmo? A Receita do Bolo da Programação
+
+Um algoritmo é simplesmente uma sequência de passos lógicos e finitos para resolver um problema. Assim como uma receita de bolo, ele tem um início, um meio e um fim, e cada passo deve ser claro e sem ambiguidades. No nosso dia a dia, usamos algoritmos o tempo todo sem perceber, como ao seguir os passos para:
+
+- Ir para o trabalho (desligar despertador, escovar os dentes, etc.).
+- Trocar uma lâmpada.
+- Fazer uma ligação.
+
+## 2. Como Construir um Algoritmo: O Planejamento da Viagem
+
+Para criar um algoritmo eficiente, é útil dividir o problema em três partes, como se estivesse planejando uma viagem:
+
+**Entrada (O que levar?):** Quais informações você precisa receber do usuário? (Ex: para somar dois números, você precisa que o usuário informe quais são esses números).
+
+**Processamento (O que fazer no caminho?):** Que cálculos ou transformações precisam ser feitos com os dados de entrada? (Ex: realizar a operação de soma).
+
+**Saída (Qual o destino final?):** Que resultado você deve mostrar ao usuário? (Ex: exibir o resultado da soma).
+
+## 3. Variáveis: As "Caixas" para Guardar Informações
+
+Ao criar um algoritmo, precisamos de um lugar para guardar temporariamente os dados. Para isso, usamos as variáveis. Pense em uma variável como uma caixa etiquetada.
+
+- **Nome único:** Cada caixa tem um nome (ex: "Idade").
+- **Tipo específico:** A caixa só pode guardar um tipo de "objeto". Uma caixa para "Idade" só guarda números inteiros; você não pode guardar a palavra "casa" nela.
+- **Um item por vez:** A caixa armazena apenas um valor de cada vez. Se você colocar o número 36 na caixa "Idade", o valor anterior que estava lá (ex: 25) é descartado.
+
+Existem diferentes "tipos de caixas" (tipos de variáveis):
+
+- **Inteiro:** Para números sem casas decimais (ex: 30, -5).
+- **Real:** Para números com casas decimais (ex: 1.58, 60.3).
+- **Caractere:** Para textos e símbolos (ex: "Maria da Silva", "3011-1212").
+- **Lógico:** Para guardar apenas dois valores: verdadeiro ou falso.
+
+## 4. Expressões e Operadores: As Ferramentas de Trabalho
+
+As expressões são como as fórmulas matemáticas, combinando variáveis e constantes com operadores para realizar cálculos. Os operadores são as ferramentas que usamos:
+
+- **Aritméticos:** Para fazer contas (+, -, *, /).
+- **Relacionais:** Para fazer comparações (>, <, =).
+- **Lógicos:** Para combinar condições ("E", "OU", "NÃO").
+
+## 5. Entrada e Saída de Dados: A Comunicação com o Usuário
+
+Por fim, um algoritmo precisa se comunicar com o mundo exterior.
+
+**Comando Leia (Entrada):** É como perguntar algo ao usuário e esperar que ele digite uma resposta, que será guardada em uma variável (nossa "caixa").
+
+**Comando Escreva (Saída):** É como mostrar uma mensagem ou o resultado de um cálculo na tela para o usuário ver.
+
+---
+
+## Conclusão
+
+Dominar esses conceitos básicos é o primeiro passo para se tornar um programador. Algoritmos são a base de tudo na programação, e entender como estruturar o pensamento lógico fará toda a diferença na sua jornada de desenvolvimento de software.
+        `
+      }
+    ]
   }
 ];
 

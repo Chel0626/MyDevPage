@@ -3,29 +3,31 @@ import ParticlesBackground from '@/components/ParticlesBackground';
 import Navbar from '@/components/Navbar';
 import ArticlesGrid from '@/components/ArticlesGrid';
 import Footer from '@/components/Footer';
-import { getThemeById, getAllThemes } from '@/data/articles';
+import { getCategoryBySlug, getAllCategories, getArticlesByCategory } from '@/data/articles';
 
-interface ThemePageProps {
+interface CategoryPageProps {
   params: {
     themeId: string;
   };
 }
 
 export async function generateStaticParams() {
-  const themes = getAllThemes();
+  const categories = getAllCategories();
   
-  return themes.map((theme) => ({
-    themeId: theme.id,
+  return categories.map((category) => ({
+    themeId: category.slug,
   }));
 }
 
-export default async function ThemePage({ params }: ThemePageProps) {
+export default async function CategoryPage({ params }: CategoryPageProps) {
   const { themeId } = await params;
-  const theme = getThemeById(themeId);
+  const category = getCategoryBySlug(themeId);
 
-  if (!theme) {
+  if (!category) {
     notFound();
   }
+
+  const categoryArticles = getArticlesByCategory(category.slug);
 
   return (
     <div className="min-h-screen bg-dark-bg text-white overflow-x-hidden">
@@ -35,25 +37,25 @@ export default async function ThemePage({ params }: ThemePageProps) {
       <main className="pt-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="text-center mb-16">
-            <div className="text-6xl mb-4">{theme.icon}</div>
+            <div className="text-6xl mb-4">{category.icon}</div>
             <h1 className="text-4xl sm:text-5xl font-bold mb-4 gradient-text">
-              {theme.name}
+              {category.title}
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-              {theme.description}
+              {category.description}
             </p>
             
             <div className="flex items-center justify-center space-x-6 text-sm text-gray-400">
-              <div className={`flex items-center ${theme.color}`}>
+              <div className="flex items-center text-neon-blue">
                 <span className="w-2 h-2 rounded-full bg-current mr-2"></span>
-                {theme.articles.length} {theme.articles.length === 1 ? 'artigo' : 'artigos'}
+                {categoryArticles.length} {categoryArticles.length === 1 ? 'artigo' : 'artigos'}
               </div>
             </div>
           </div>
         </div>
         
-        {theme.articles.length > 0 ? (
-          <ArticlesGrid articles={theme.articles} title="" showAll={true} />
+        {categoryArticles.length > 0 ? (
+          <ArticlesGrid articles={categoryArticles} title="" showAll={true} />
         ) : (
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
             <div className="text-6xl mb-6">🚧</div>
@@ -61,7 +63,7 @@ export default async function ThemePage({ params }: ThemePageProps) {
               Conteúdo em Desenvolvimento
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Estamos preparando conteúdo incrível sobre {theme.name}. 
+              Estamos preparando conteúdo incrível sobre {category.title}. 
               Em breve você encontrará artigos detalhados e guias práticos sobre este tema.
             </p>
           </div>
