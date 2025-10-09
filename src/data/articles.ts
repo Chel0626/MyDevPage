@@ -19,16 +19,22 @@ export interface Category {
 
 export const categories: Category[] = [
   {
-    slug: 'arquitetura-software',
-    title: 'Arquitetura de Software',
-    description: 'Conceitos fundamentais sobre arquitetura, padrões de design e boas práticas de engenharia de software.',
-    icon: '🏗️'
+    slug: 'design-patterns',
+    title: 'Design Patterns',
+    description: 'Padrões de design e arquiteturas de código para resolver problemas comuns no desenvolvimento de software.',
+    icon: '�'
   },
   {
-    slug: 'cloud-aws',
-    title: 'Cloud & AWS',
+    slug: 'aws',
+    title: 'AWS',
     description: 'Guias e tutoriais sobre Amazon Web Services, computação em nuvem e infraestrutura moderna.',
     icon: '☁️'
+  },
+  {
+    slug: 'arquitetura-software',
+    title: 'Arquitetura de Software',
+    description: 'Conceitos fundamentais sobre engenharia de software, requisitos e boas práticas de desenvolvimento.',
+    icon: '🏗️'
   }
 ];
 
@@ -40,7 +46,7 @@ export const articles: Article[] = [
     date: '06 Out 2025',
     readTime: '8 min',
     tags: ['Design Patterns', 'Programação', 'Arquitetura'],
-    category: 'arquitetura-software',
+    category: 'design-patterns',
     content: `
 # Abstract Factory
 
@@ -223,7 +229,7 @@ Lembre-se: requisitos não são apenas documentos burocráticos. Eles são a pon
     date: '07 Out 2025',
     readTime: '12 min',
     tags: ['AWS', 'Cloud Computing', 'Fundamentos'],
-    category: 'cloud-aws',
+    category: 'aws',
     content: `
 # Módulo 1: Fundamentos Essenciais da Nuvem AWS
 
