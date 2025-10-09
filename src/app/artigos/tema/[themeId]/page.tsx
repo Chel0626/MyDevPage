@@ -3,7 +3,7 @@ import ParticlesBackground from '@/components/ParticlesBackground';
 import Navbar from '@/components/Navbar';
 import ArticlesGrid from '@/components/ArticlesGrid';
 import Footer from '@/components/Footer';
-import { getCategoryBySlug, getAllCategories, getArticlesByCategory } from '@/data/articles';
+import { getThemeById, getAllThemes, getArticlesByTheme } from '@/data/articles';
 
 interface CategoryPageProps {
   params: {
@@ -12,22 +12,22 @@ interface CategoryPageProps {
 }
 
 export async function generateStaticParams() {
-  const categories = getAllCategories();
+  const categories = getAllThemes();
   
   return categories.map((category) => ({
-    themeId: category.slug,
+    themeId: category.id,
   }));
 }
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
   const { themeId } = await params;
-  const category = getCategoryBySlug(themeId);
+  const category = getThemeById(themeId);
 
   if (!category) {
     notFound();
   }
 
-  const categoryArticles = getArticlesByCategory(category.slug);
+  const categoryArticles = getArticlesByTheme(category.id);
 
   return (
     <div className="min-h-screen bg-dark-bg text-white overflow-x-hidden">
@@ -39,7 +39,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           <div className="text-center mb-16">
             <div className="text-6xl mb-4">{category.icon}</div>
             <h1 className="text-4xl sm:text-5xl font-bold mb-4 gradient-text">
-              {category.title}
+              {category.name}
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
               {category.description}
@@ -63,7 +63,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               Conteúdo em Desenvolvimento
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Estamos preparando conteúdo incrível sobre {category.title}. 
+              Estamos preparando conteúdo incrível sobre {category.name}. 
               Em breve você encontrará artigos detalhados e guias práticos sobre este tema.
             </p>
           </div>

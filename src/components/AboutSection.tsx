@@ -64,7 +64,7 @@ export default function AboutSection() {
 
             <h3 className="text-2xl font-bold text-white mb-4">Michel Henrique</h3>
             <p className="text-neon-blue font-semibold mb-6">Cloud-Native Software Engineer</p>
-
+            
             <div className="flex justify-center lg:justify-start space-x-4 mb-8">
               <a 
                 href="https://github.com/Chel0626" 

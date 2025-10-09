@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { Calendar, Clock, ChevronDown, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
-import { getAllCategories, getArticlesByCategory, type Article, type Category } from '@/data/articles';
+import { getAllThemes, getArticlesByTheme, type Article, type Theme } from '@/data/articles';
 
 interface ArticleCardProps {
   article: Article;
@@ -12,7 +12,7 @@ interface ArticleCardProps {
 }
 
 interface CategorySectionProps {
-  category: Category;
+  category: Theme;
   articles: Article[];
   isExpanded: boolean;
   onToggle: () => void;
@@ -30,7 +30,7 @@ function CategorySection({ category, articles, isExpanded, onToggle }: CategoryS
       >
         <span className="text-2xl">{category.icon}</span>
         <h3 className="text-2xl font-bold text-white group-hover:text-neon-blue transition-colors">
-          {category.title}
+          {category.name}
         </h3>
         <motion.div
           animate={{ rotate: isExpanded ? 90 : 0 }}
@@ -153,14 +153,14 @@ export default function ArticlesGrid({
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
 
   if (showByCategories) {
-    const categories = getAllCategories();
+    const categories = getAllThemes();
     
-    const toggleCategory = (categorySlug: string) => {
+    const toggleCategory = (categoryId: string) => {
       const newExpanded = new Set(expandedCategories);
-      if (newExpanded.has(categorySlug)) {
-        newExpanded.delete(categorySlug);
+      if (newExpanded.has(categoryId)) {
+        newExpanded.delete(categoryId);
       } else {
-        newExpanded.add(categorySlug);
+        newExpanded.add(categoryId);
       }
       setExpandedCategories(newExpanded);
     };
@@ -179,14 +179,14 @@ export default function ArticlesGrid({
 
           <div className="space-y-8">
             {categories.map((category) => {
-              const categoryArticles = getArticlesByCategory(category.slug);
+              const categoryArticles = getArticlesByTheme(category.id);
               return (
                 <CategorySection
-                  key={category.slug}
+                  key={category.id}
                   category={category}
                   articles={categoryArticles}
-                  isExpanded={expandedCategories.has(category.slug)}
-                  onToggle={() => toggleCategory(category.slug)}
+                  isExpanded={expandedCategories.has(category.id)}
+                  onToggle={() => toggleCategory(category.id)}
                 />
               );
             })}
