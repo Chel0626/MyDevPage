@@ -23,6 +23,12 @@ export const categories: Category[] = [
     title: 'Arquitetura de Software',
     description: 'Conceitos fundamentais sobre arquitetura, padrões de design e boas práticas de engenharia de software.',
     icon: '🏗️'
+  },
+  {
+    slug: 'cloud-aws',
+    title: 'Cloud & AWS',
+    description: 'Guias e tutoriais sobre Amazon Web Services, computação em nuvem e infraestrutura moderna.',
+    icon: '☁️'
   }
 ];
 
@@ -208,6 +214,69 @@ Ao final da fase de requisitos, você не tem apenas uma lista de desejos, mas 
 Entender este ciclo é o que diferencia a construção de um software bem-sucedido de um projeto destinado ao fracasso. Foque no "porquê", escute o usuário, detalhe o comportamento e, acima de tudo, **priorize o que gera mais valor**.
 
 Lembre-se: requisitos não são apenas documentos burocráticos. Eles são a ponte entre o sonho do cliente e o código que você vai escrever. Construa essa ponte com cuidado, e o sucesso do projeto será uma consequência natural.
+    `
+  },
+  {
+    slug: 'fundamentos-aws-computacao-nuvem',
+    title: 'Fundamentos Essenciais da Nuvem AWS - Módulo 1',
+    description: 'Entenda o que é computação em nuvem através de analogias práticas e comparações reais. Aprenda por que a AWS é como a energia elétrica da sua casa e como isso pode revolucionar seu negócio.',
+    date: '07 Out 2025',
+    readTime: '12 min',
+    tags: ['AWS', 'Cloud Computing', 'Fundamentos'],
+    category: 'cloud-aws',
+    content: `
+# Módulo 1: Fundamentos Essenciais da Nuvem AWS
+
+## Microbloco 1.1: O que é Computação em Nuvem?
+
+### 1. O Contexto (O "Porquê")
+
+Imagine que você e sua equipe acabaram de finalizar a primeira versão do seu **software**. O próximo passo é disponibilizá-lo para os primeiros clientes. No passado (e ainda hoje em algumas empresas), você precisaria:
+
+1. Comprar um servidor físico (uma máquina potente).
+2. Alugar um espaço em um data center para hospedar esse servidor (com ar condicionado, energia redundante, segurança física).
+3. Instalar o sistema operacional, o banco de dados e todas as dependências.
+4. Configurar a rede e a segurança.
+
+Isso custa muito dinheiro (investimento inicial) e tempo. E se o **software** fizer um sucesso estrondoso e você precisar de 10 vezes mais capacidade da noite para o dia? Você teria que repetir todo o processo, correndo o risco de perder clientes enquanto isso.
+
+A computação em nuvem nasceu para resolver exatamente esse problema.
+
+### 2. A Matéria (O "O quê")
+
+**Computação em Nuvem** (Cloud Computing) é a entrega de recursos de tecnologia (como servidores, armazenamento, bancos de dados, redes e software) sob demanda, pela internet, com um modelo de preço de "pagamento conforme o uso" (pay-as-you-go).
+
+Em vez de comprar e manter sua própria infraestrutura, você pode alugar esses recursos de um provedor de nuvem, como a Amazon Web Services (AWS).
+
+### 3. A Analogia
+
+Pense na computação em nuvem como a **energia elétrica** 🔌 da sua casa.
+
+Você não constrói uma usina hidrelétrica no seu quintal para ter luz. Você simplesmente se conecta à rede elétrica da cidade e paga apenas pela energia que consome no final do mês. Se um dia você compra um ar-condicionado novo e consome mais energia, sua conta aumenta. Se você viaja e desliga tudo, sua conta diminui.
+
+A AWS é a "companhia de energia" para a sua empresa de software. Você "pluga" sua aplicação (o **software**) na infraestrutura deles e paga apenas pelos recursos que seu software utiliza.
+
+![Diagrama de Computação em Nuvem](/aws1.jpeg)
+
+### 4. Mãos na Massa (Aplicação Real)
+
+Vamos criar um quadro de planejamento para o lançamento do software, comparando o modelo tradicional com o modelo em nuvem. Isso é uma ferramenta útil para justificar a escolha da nuvem para um cliente ou gerente.
+
+**Cenário:** Lançamento de um novo software para os primeiros 100 usuários.
+
+| Recurso Necessário | **Abordagem Tradicional (Servidor Próprio)** | **Abordagem em Nuvem (AWS)** |
+| :--- | :--- | :--- |
+| **Servidor Web** | Compra de um servidor físico: **R$ 8.000** | Aluguel de um servidor virtual (EC2): **~R$ 80/mês** |
+| **Banco de Dados** | Instalação e licenciamento de software: **R$ 2.000** | Uso de um serviço de banco de dados (RDS): **~R$ 100/mês** |
+| **Armazenamento** | Compra de discos (HDs/SSDs): **R$ 1.500** | Armazenamento de objetos (S3): **Paga por GB, centavos** |
+| **Manutenção/Tempo**| Contratação de um especialista ou tempo da sua equipe | Gerenciado pela AWS, foco total no seu código |
+| **Investimento Inicial** | **~ R$ 11.500** | **~ R$ 180** (para o primeiro mês) |
+
+## Conclusão do Módulo 1
+
+A computação em nuvem não é apenas uma tendência tecnológica, é uma mudança fundamental na forma como consumimos recursos de TI. Assim como não pensamos duas vezes antes de ligar uma lâmpada (confiando que a energia elétrica estará disponível), a AWS permite que você se concentre no que realmente importa: desenvolver seu software e atender seus clientes.
+
+No próximo módulo, vamos explorar os principais serviços da AWS e como eles se conectam para formar uma solução completa.
     `
   }
 ];

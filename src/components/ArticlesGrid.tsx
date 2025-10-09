@@ -71,12 +71,14 @@ function ArticleCard({ article, index }: ArticleCardProps) {
     'Engenharia de Software': 'bg-neon-green/20 text-neon-green border-neon-green',
     'Requisitos': 'bg-orange-500/20 text-orange-400 border-orange-400',
     'Gestão de Projetos': 'bg-red-500/20 text-red-400 border-red-400',
+    'AWS': 'bg-orange-500/20 text-orange-400 border-orange-400',
+    'Cloud Computing': 'bg-cyan-500/20 text-cyan-400 border-cyan-400',
+    'Fundamentos': 'bg-green-500/20 text-green-400 border-green-400',
     'Next.js': 'bg-neon-blue/20 text-neon-blue border-neon-blue',
     'React': 'bg-blue-500/20 text-blue-400 border-blue-400',
     'TypeScript': 'bg-neon-purple/20 text-neon-purple border-neon-purple',
     'JavaScript': 'bg-yellow-500/20 text-yellow-400 border-yellow-400',
     'Python': 'bg-neon-green/20 text-neon-green border-neon-green',
-    'AWS': 'bg-orange-500/20 text-orange-400 border-orange-400',
     'DevOps': 'bg-red-500/20 text-red-400 border-red-400',
   };
 
