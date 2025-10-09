@@ -77,7 +77,7 @@ Com o &ldquo;porquê&rdquo; definido, descemos um nível e focamos em quem vai u
 
 *&ldquo;Como um anfitrião, eu quero uma cozinha aberta integrada à sala, para que eu possa cozinhar e conversar com meus convidados ao mesmo tempo.&rdquo;*
 
-O formato é sempre: **Como um(a) <tipo de usuário>, eu quero <fazer uma ação>, para que <eu possa alcançar um objetivo>**.
+O formato é sempre: **Como um(a) &lt;tipo de usuário&gt;, eu quero &lt;fazer uma ação&gt;, para que &lt;eu possa alcançar um objetivo&gt;**.
 
 Este formato nos força a pensar na funcionalidade (cozinha aberta) sob a perspectiva de quem a usa (anfitrião) e a justificar sua existência (para conversar com os convidados).
 
