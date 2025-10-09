@@ -510,6 +510,49 @@ Seu programa precisa conversar com o usuário. Para isso, ele usa duas ferrament
 
 Com esses conceitos iniciais, você está pronto para começar sua jornada na programação em C. Entender a estrutura básica, variáveis e entrada/saída é fundamental para construir programas cada vez mais complexos.
         `
+      },
+      {
+        slug: 'estrutura-condicional-c',
+        title: 'Estrutura Condicional',
+        description: 'Aprenda a dar poder de decisão aos seus programas em C usando if, else e switch-case. Descubra como criar programas inteligentes que reagem a diferentes situações.',
+        date: '09 Out 2025',
+        readTime: '12 min',
+        tags: ['C', 'Programação', 'Condicionais'],
+        content: `
+# Estrutura Condicional - Dando o Poder de Decisão ao seu Programa
+
+Imagine que os programas que criamos na Unidade 1 eram como um trem em um trilho único: eles seguiam uma rota reta, executando cada comando em sequência, sem desvios. Nesta unidade, vamos instalar os "trilhos de desvio" e os "sinais de controle". As estruturas condicionais são as ferramentas que permitem ao nosso programa analisar uma situação e decidir qual caminho seguir.
+
+## 1. Estrutura Condicional Simples (if): A Porta com Sensor de Presença
+
+Pense na estrutura if como uma porta automática. Ela só executa uma ação (abrir) se uma condição específica for atendida (alguém se aproxima). Se a condição não for atendida, nada acontece, e o fluxo continua normalmente.
+
+**Analogia:** "Se (o semáforo estiver verde), então atravesse a rua." Se não estiver verde, você simplesmente espera, sem executar a ação de atravessar.
+
+**Como funciona em C:** O comando if testa uma condição. Se o resultado for verdadeiro, o bloco de código dentro das chaves { } é executado. Se for falso, esse bloco é totalmente ignorado, e o programa pula para a próxima instrução.
+
+## 2. Estrutura Condicional Composta (if-else): A Bifurcação na Estrada
+
+Esta estrutura é como chegar a uma bifurcação onde você é obrigado a escolher um de dois caminhos. Não há como seguir reto. Você vai para a esquerda OU para a direita.
+
+**Analogia:** "Se (a idade for maior ou igual a 18), então você é maior de idade. Senão (caso contrário), você é menor de idade." Uma das duas opções sempre será verdade.
+
+**Como funciona em C:** O programa avalia a condição no if. Se for verdadeira, ele executa o primeiro bloco de código. Se for falsa, ele executa o bloco de código que está dentro do else. Um, e apenas um, dos dois blocos será executado.
+
+## 3. Estrutura case (switch-case): O Painel de Botões do Elevador
+
+A estrutura case (ou switch) é perfeita para situações com várias opções claras e mutuamente exclusivas, como um menu. É como o painel de um elevador.
+
+**Analogia:** Você quer ir para um andar. Você aperta o botão do andar desejado (case). O elevador vai para aquele andar e executa a ação (abre a porta). O comando break é crucial aqui: ele funciona como o freio que para o elevador no andar correto, impedindo que ele continue subindo para os andares seguintes. Se você apertar um botão que não existe, o default é a ação padrão (como "andar inválido").
+
+**Como funciona em C:** O switch avalia o valor de uma variável. O programa então "salta" para o case que corresponde àquele valor e executa o código até encontrar um break.
+
+---
+
+## Conclusão
+
+Em resumo, a Unidade 2 nos dá as ferramentas para criar programas que não são apenas uma sequência de tarefas, mas que podem pensar, avaliar condições e reagir de maneiras diferentes a cada situação, tornando-os muito mais inteligentes e úteis.
+        `
       }
     ]
   }
