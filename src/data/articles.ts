@@ -135,6 +135,8 @@ Entender os requisitos é como ter a planta de uma casa antes de começar a cons
 
 Neste guia, vamos desmistificar o ciclo de vida dos requisitos de uma forma simples, clara e com analogias, mostrando o caminho desde a ideia inicial até uma lista de tarefas pronta para ser codificada.
 
+![Ciclo de Vida dos Requisitos de Software](/requisitos.png)
+
 ## A Grande Etapa: Levantamento e Análise de Requisitos
 
 Antes de pensar em código, banco de dados ou design, precisamos passar por uma fase de investigação. O objetivo é responder a uma única pergunta em diferentes níveis de detalhe: **"O que vamos construir?"**. Essa fase se divide em três passos fundamentais.
