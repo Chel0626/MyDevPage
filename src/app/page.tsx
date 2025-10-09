@@ -16,7 +16,7 @@ export default function Home() {
       
       <main>
         <HeroSection />
-        <ArticlesGrid articles={articles} title="Artigos em Destaque" />
+        <ArticlesGrid title="Artigos em Destaque" showByCategories={true} />
         <AboutSection />
       </main>
       
