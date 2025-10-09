@@ -144,7 +144,7 @@ Lembre-se: requisitos não são apenas documentos burocráticos. Eles são a pon
     id: 'design-patterns',
     name: 'Design Patterns',
     description: 'Padrões de projeto fundamentais para desenvolvimento de software',
-    icon: '�',
+    icon: '⚙️',
     color: 'text-purple-400',
     bgColor: 'bg-purple-500/20',
     articles: [
