@@ -2,65 +2,12 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Calendar, Clock, ChevronDown, ChevronRight } from 'lucide-react';
-import { useState } from 'react';
-import { getAllCategories, getArticlesByCategory, type Article, type Category } from '@/data/articles';
+import { Calendar, Clock } from 'lucide-react';
+import { type Article } from '@/data/articles';
 
 interface ArticleCardProps {
   article: Article;
   index: number;
-}
-
-interface CategorySectionProps {
-  category: Category;
-  articles: Article[];
-  isExpanded: boolean;
-  onToggle: () => void;
-}
-
-function CategorySection({ category, articles, isExpanded, onToggle }: CategorySectionProps) {
-  return (
-    <div className="mb-12">
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="flex items-center gap-3 mb-6 cursor-pointer group"
-        onClick={onToggle}
-      >
-        <span className="text-2xl">{category.icon}</span>
-        <h3 className="text-2xl font-bold text-white group-hover:text-neon-blue transition-colors">
-          {category.title}
-        </h3>
-        <motion.div
-          animate={{ rotate: isExpanded ? 90 : 0 }}
-          transition={{ duration: 0.3 }}
-        >
-          <ChevronRight className="text-neon-blue" size={20} />
-        </motion.div>
-      </motion.div>
-
-      <p className="text-gray-300 mb-6 ml-11">
-        {category.description}
-      </p>
-
-      <motion.div
-        initial={{ height: 0, opacity: 0 }}
-        animate={{ 
-          height: isExpanded ? 'auto' : 0,
-          opacity: isExpanded ? 1 : 0
-        }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="overflow-hidden"
-      >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ml-11">
-          {articles.map((article, index) => (
-            <ArticleCard key={article.slug} article={article} index={index} />
-          ))}
-        </div>
-      </motion.div>
-    </div>
-  );
 }
 
 function ArticleCard({ article, index }: ArticleCardProps) {
@@ -139,62 +86,13 @@ interface ArticlesGridProps {
   articles?: Article[];
   title?: string;
   showAll?: boolean;
-  showByCategories?: boolean;
 }
 
 export default function ArticlesGrid({ 
   articles, 
   title = "Artigos Recentes", 
-  showAll = false,
-  showByCategories = false 
+  showAll = false
 }: ArticlesGridProps) {
-  const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
-
-  if (showByCategories) {
-    const categories = getAllCategories();
-    
-    const toggleCategory = (categorySlug: string) => {
-      const newExpanded = new Set(expandedCategories);
-      if (newExpanded.has(categorySlug)) {
-        newExpanded.delete(categorySlug);
-      } else {
-        newExpanded.add(categorySlug);
-      }
-      setExpandedCategories(newExpanded);
-    };
-
-    return (
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl sm:text-4xl font-bold text-center mb-12 gradient-text"
-          >
-            {title}
-          </motion.h2>
-
-          <div className="space-y-8">
-            {categories.map((category) => {
-              const categoryArticles = getArticlesByCategory(category.slug);
-              return (
-                <CategorySection
-                  key={category.slug}
-                  category={category}
-                  articles={categoryArticles}
-                  isExpanded={expandedCategories.has(category.slug)}
-                  onToggle={() => toggleCategory(category.slug)}
-                />
-              );
-            })}
-          </div>
-        </div>
-      </section>
-    );
-  }
-
-  // Modo tradicional (lista de artigos)
   const displayedArticles = showAll ? (articles || []) : (articles || []).slice(0, 6);
 
   return (
