@@ -1,12 +1,9 @@
 import ParticlesBackground from '@/components/ParticlesBackground';
 import Navbar from '@/components/Navbar';
-import ArticlesGrid from '@/components/ArticlesGrid';
+import ThemesGrid from '@/components/ThemesGrid';
 import Footer from '@/components/Footer';
-import { getAllArticles } from '@/data/articles';
 
 export default function ArtigosPage() {
-  const articles = getAllArticles();
-
   return (
     <div className="min-h-screen bg-dark-bg text-white overflow-x-hidden">
       <ParticlesBackground />
@@ -16,15 +13,15 @@ export default function ArtigosPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="text-center mb-16">
             <h1 className="text-4xl sm:text-5xl font-bold mb-4 gradient-text">
-              Todos os Artigos
+              Temas dos Artigos
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Explore todo o conteúdo sobre desenvolvimento, tecnologia e programação
+              Explore o conteúdo organizado por temas específicos
             </p>
           </div>
         </div>
         
-        <ArticlesGrid articles={articles} title="" showAll={true} />
+        <ThemesGrid />
       </main>
       
       <Footer />
