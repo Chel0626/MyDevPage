@@ -435,6 +435,83 @@ As estruturas condicionais são fundamentais para criar algoritmos inteligentes 
         `
       }
     ]
+  },
+  {
+    id: 'linguagem-tecnicas-programacao',
+    name: 'Linguagem e Técnicas de Programação',
+    description: 'Aprenda os fundamentos da programação em C e técnicas essenciais para desenvolvimento de software.',
+    icon: '💻',
+    color: 'text-cyan-400',
+    bgColor: 'bg-cyan-500/20',
+    articles: [
+      {
+        slug: 'conceitos-iniciais-c',
+        title: 'Conceitos Iniciais',
+        description: 'Descubra os fundamentos da programação em C através de analogias práticas. Aprenda sobre compilação, estrutura de programas, variáveis e entrada/saída.',
+        date: '09 Out 2025',
+        readTime: '15 min',
+        tags: ['C', 'Programação', 'Fundamentos'],
+        content: `
+# Conceitos Iniciais - Montando sua Oficina de Programação em C
+
+Vamos imaginar que você decidiu aprender marcenaria. Antes de construir seu primeiro móvel, você precisa conhecer suas ferramentas, entender como elas funcionam e aprender a ler uma planta de construção. A Unidade 1 é exatamente isso, mas para a programação em C: ela te apresenta a "oficina", as "ferramentas" e as "plantas" para construir seus primeiros programas.
+
+## 1. A Linguagem C: A Caixa de Ferramentas Universal
+
+A linguagem C é como uma caixa de ferramentas clássica e poderosa, criada nos anos 70. Ela é popular porque não está presa a uma única marca de equipamento; um programa feito em C pode funcionar em diversas máquinas diferentes com pouca ou nenhuma alteração. Ela combina a clareza de uma linguagem moderna com a eficiência de uma linguagem mais próxima da máquina.
+
+## 2. O Processo de Criação: Da Planta ao Móvel Pronto
+
+Criar um programa não é um passo único. É um processo de montagem, assim como na marcenaria:
+
+**Código-Fonte (A Planta):** É o texto que você escreve, seguindo as regras da linguagem C, para descrever o que o programa deve fazer.
+
+**Compilador (O Marceneiro Chefe):** Essa ferramenta pega sua "planta" (código-fonte) e a traduz para uma linguagem que a máquina entende, criando um "programa-objeto". Ele também verifica se sua planta tem erros de escrita.
+
+**Ligador (O Montador Final):** Se seu programa usa "peças pré-fabricadas" (funções de bibliotecas, como printf), o ligador junta tudo: seu programa-objeto e as peças das bibliotecas.
+
+**Programa Executável (O Móvel Pronto):** O resultado final é um programa que o computador pode executar.
+
+## 3. A Estrutura de um Programa: A Planta Baixa Padrão
+
+Todo programa em C segue uma estrutura básica, como uma planta baixa:
+
+**#include &lt;stdio.h&gt; (A Lista de Ferramentas):** Essa linha é como dizer: "Para este projeto, vou precisar das ferramentas padrão de entrada e saída". Ela inclui uma "caixa de ferramentas" (biblioteca) essencial.
+
+**int main() (A Porta de Entrada):** Todo programa C precisa ter uma função principal chamada main. É por aqui que a execução sempre começa.
+
+**{ } (As Paredes da Oficina):** As chaves delimitam o início e o fim do seu bloco de trabalho (o corpo da função main). Tudo que estiver aqui dentro será executado em sequência.
+
+**return (0); (A Inspeção Final):** Esta linha diz: "Terminei o trabalho e deu tudo certo".
+
+## 4. Variáveis e Tipos de Dados: As Gavetas de Peças
+
+Para trabalhar, você precisa de gavetas para organizar suas peças. As variáveis são essas gavetas na memória do computador. Cada gaveta tem:
+
+**Um nome (identificador):** A etiqueta da gaveta (ex: idade).
+
+**Um tipo específico:** O que ela pode guardar. As gavetas mais comuns são:
+
+- **int:** Para números inteiros (ex: 15).
+- **float:** Para números com casas decimais (ex: 1.60).
+- **char:** Para um único caractere (letra, número ou símbolo). Para guardar textos (strings), usamos um "gaveteiro" de char (um vetor).
+
+## 5. Comandos de Entrada e Saída: A Comunicação com o Cliente
+
+Seu programa precisa conversar com o usuário. Para isso, ele usa duas ferramentas principais da biblioteca stdio.h:
+
+**printf() (O megafone):** Use-o para mostrar mensagens na tela. Você pode exibir textos puros ou o conteúdo das suas "gavetas" (variáveis).
+
+**scanf() (O bloco de anotações):** Use-o para receber dados que o usuário digita e guardá-los em uma variável específica. Você precisa indicar o "endereço" (&amp;) da gaveta onde quer guardar a informação.
+
+---
+
+## Conclusão
+
+Com esses conceitos iniciais, você está pronto para começar sua jornada na programação em C. Entender a estrutura básica, variáveis e entrada/saída é fundamental para construir programas cada vez mais complexos.
+        `
+      }
+    ]
   }
 ];
 
